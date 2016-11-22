@@ -1,0 +1,6 @@
+# test messages file
+
+error.exception.number_arguments_wrong=No enough elements ({n: Int}) in argument {list: ListBuffer[Int]}
+
+message.rounding_mode.{CEILING: RoundingMode}=Rounding Mode Ceiling
+message.rounding_mode.{FLOOR: RoundingMode}=Rounding Mode Floor
