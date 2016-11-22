@@ -1,0 +1,12 @@
+#+STARTUP: showall
+* Puppet
+** Useful Commands
+puppet resource user
+puppet describe -s user
+puppet help apply
+puppet apply 1.file.pp
+facter (see available facts)
+** Sign Node Certificates
+sudo puppet cert list
+sudo puppet cert sign <NAME>, or
+sudo puppet cert sign --all

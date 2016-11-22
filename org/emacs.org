@@ -1,0 +1,4 @@
+#+STARTUP: showall
+* Emacs
+** Align text (in puppet)
+M-x align-regexp, and input "="

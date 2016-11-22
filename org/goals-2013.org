@@ -1,0 +1,45 @@
+#+STARTUP: showall
+* Goals 2013
+** IT Technology
+*** Programming Languages
+**** Scala
+**** Go Language
+**** Ruby
+*** Big Data
+**** TODO Hadoop
+**** TODO Spark
+*** Cloud
+*** Database
+**** MongoDB
+**** MySQL
+*** Web Frontend
+**** Javascript
+**** Coffeescript
+**** CSS
+*** Web Backend
+**** Memecached
+**** Redis
+**** Nginx
+**** Play Framework
+**** Ruby on Rails
+*** Network
+**** DNS
+**** Proxy
+**** OpenWRT
+*** IT Infrastructure
+**** LDAP
+**** AFS
+**** FTP
+**** Samba
+**** Puppet (Configration Management)
+*** Version Control
+**** Git
+**** Subversion
+**** Mercurual
+*** Develop Tools
+**** Eclipse with Scala plugin
+*** Project Management
+**** JIRA
+**** Redmine
+**** TODO Bugzilla
+** Finance

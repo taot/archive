@@ -1,0 +1,11 @@
+#+STARTUP: showall
+* Jekyll commands
+** Build
+- jekyll build (source is current directory and generate into ./_site)
+- jekyll build --source <source> --destination <destination>
+- jekyll build --watch
+** Server
+- jekyll serve
+- jekyll serve --watch
+** Configuration
+_config.yml file at the root of the source directory

@@ -1,0 +1,35 @@
+#+STARTUP: showall
+* References
+** Download and Install
++ https://github.com/RevolutionAnalytics/RHadoop/wiki/Downloads
+** Installation Notes
++ Make sure you can access MapR file services by listing the contents of the root directory.
+#+BEGIN_SRC sh
+hadoop fs -ls /
+#+END_SRC
++ Install rJava package (in R)
+#+BEGIN_SRC R
+> install.packages('rJava')
+> q()
+#+END_SRC
++ Download the rhdfs tar file from https://github.com/RevolutionAnalytics/RHadoop/wiki/Downloadsp
++ Set HADOOP_CMD environment variable, and install rhdfs
+#+BEGIN_SRC sh
+export HADOOP_CMD=$HADOOP_HOME/bin/hadoop
+R CMD INSTALL rhdfs.tar.gz
+#+END_SRC
++ Set required environment variables
+#+BEGIN_SRC sh
+export HADOOP_CMD=$HADOOP_HOME/bin/hadoop
+export HADOOP_CONF=$HADOOP_HOME/conf  (?)
+#+END_SRC
++ Load rhdfs
+#+BEGIN_SRC R
+> library(rhdfs)
+> hdfs.init()
+> hdfs.ls('/')
+#+END_SRC
++ Run rhdfs package check
+#+BEGIN_SRC sh
+R CMD check rhdfs.tar.gz
+#+END_SRC

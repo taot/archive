@@ -1,0 +1,14 @@
+#+STARTUP: showall
+* Scientific Computing
+** Washington University Applied Math
+http://courses.washington.edu/amath581/
+** Time-stepping Routines
+*** MATLAB Algorithms for Solving Differential Equations
++ ode45 (Fourth order Runge-Kutta)
++ od23 (Second order Runge-Kutta)
++ ode113 (Predict and correct method)
++ ode15s
+** Boundary Value Problems and Shooting Methods
+*** Eigenvalue Problem
+*** Steps to Solve Boundary Value Problems
+**** Turn it into a first order system

@@ -1,0 +1,7 @@
+#+STARTUP: showall
+* Frequently Used Commands
+- .help              Show help message
+- .databases         List names and files of attached databases
+- .read FILENAME     Execute SQL in FILENAME)
+* Sqlite Shell Configuration file
+~/.sqliterc

@@ -1,0 +1,7 @@
+#+STARTUP: showall
+* Tmux
+** Synchronize panes
+:setw synchronize-panes
+** Split window evenly
+:select-layout even-vertical
+:select-layout even-horizontal

@@ -1,0 +1,10 @@
+*~
+*.aux
+*.log
+*.odt
+*.out
+*.pdf
+*.tex
+*.toc
+\#*#
+.#*

@@ -1,0 +1,10 @@
+#+STARTUP: showall
+* NoSQL
+** Cassandra
+http://www.datastax.com/dev/blog/2012-in-review-performance
+*** Architecture
++ Fully distributed
++ Log-structured storage engine
++ Tight integration with its storage engine
++ Locally-managed storage
+*** Implementation

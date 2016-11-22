@@ -1,0 +1,14 @@
+#+STARTUP: showall
+* Maven Commands Reference
+** Create a project
+mvn archetype:create -DgroupId=org.taot.sample -DartifactId=java-exception-sample
+** Update dependency only
+mvn dependency:resolve  # It needs to download a bunch of files for dependency plugin
+** Run main class
+mvn exec:java -Dexec.mainClass="your.MainClass" -Dexec.args="arg0 arg1 arg2"
+** Scala http://scala-tools.org/mvnsites/maven-scala-plugin/index.html
+*** Running
+mvn scala:run -DmainClass="MainClass"
+mvn scala:run -Dlauncher=foo -DaddArgs=arg1|arg2|arg3
+*** Console
+mvn scala:console

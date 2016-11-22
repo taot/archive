@@ -1,0 +1,18 @@
+#+STARTUP: showall
+* Deploy CAS (Tomcat)
+** Create the certificate
+- keytool -genkey -alias tomcat -keyalg RSA -validity 365
+** Enable SSL in Tomcat
+- Find this block in $TOMCAT_HOME/conf/server.xml and uncomment it
+#+BEGIN_SRC xml
+<!--
+  <Connector port="8443" protocol="HTTP/1.1" SSLEnabled="true"
+             maxThreads="150" scheme="https" secure="true"
+             clientAuth="false" sslProtocol="TLS" />
+-->
+#+END_SRC
+** Export the certificate (Optional)
+- keytool -export -alias tomcat -file tomcat.crt
+Then you can import tomcat.crt into other JVM keystore's by this:
+- keytool -import -file tomcat.crt -keystore $JAVA_HOME/jre/lib/security/cacerts -alias tomcat
+** Deploy cas-server-webapp-VERSION.war following INSTALL.txt (mini task)

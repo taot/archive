@@ -1,0 +1,14 @@
+#+STARTUP: showall
+* TF-IDF
++ IDF: Inverse Document Freqency, \( IDF=log_2 \frac{N}{N_w} \), where N is the number of total documents, with \(N_w\) containing the word
++ TF: Term-Freqency, \( n_w^d \) = frequency of w in document d
++ TF-IDF:
+\begin{equation}
+TF\mbox{-}IDF = IDF \times TF = n_w^d log_2 \frac{N}{N_w}
+\end{equation}
+* Mutual Information between F and B (f is feature and b is behavior)
+\begin{equation}
+  I(F,B)=\sum_{f,b} p(f,b) log \frac{p(f,b)}{p(f)p(b)}
+\end{equation}
+* Capacity of Communication Channel
+Maximum mutual information between sender and receiver per second

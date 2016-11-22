@@ -1,0 +1,14 @@
+#+STARTUP: showall
+* Memory
+** Free up cache space in memory
+$ sysctl vm.drop_caches=3
+$ echo 3 > /proc/sys/vm/drop_caches
+** nmon - AIX & Linux Performance Monitoring Tool
+** /proc - process information pseudo-file system
+$ man 5 proc
+** Look at slab pool
+$ slabtop
+** Useful commands
+- pgrep
+- pkill
+- pmap (report memory map of a process)

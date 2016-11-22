@@ -1,0 +1,19 @@
+#+STARTUP: showall
+* CQL
+- Create keyspace
+cqlsh> CREATE KEYSPACE demodb WITH REPLICATION = {'class': 'SimpleStrategy', 'replication_factor': 3};
+cqlsh> use demodb;
+- Create table
+cqlsh> CREATE TABLE emp (empID int, deptID int, first_name varchar, last_name varchar, PRIMARY KEY (empID, deptID));
+- Insert data
+cqlsh> INSERT INTO emp (empID, deptID, first_name, last_name) VALUES (104, 15, 'jane', 'smith');
+- Query keyspaces
+cqlsh> SELECT * from system.schema_keyspaces;
+* System Tables
+| Table name            | Column name                                                                                                                                                                               | Comment                                                                                   |
+|-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------|
+| schema_keyspaces      | keyspace_name, durable_writes, strategy_class, strategy_options                                                                                                                           |                                                                                           |
+| local                 | "key", bootstrapped, cluster_name, cql_version, data_center, gossip_generation, partitioner, rack, release_version, ring_id, schema_version, thrift_version, tokens set, truncated at map | Information a node has about itself and a superset of gossip.                             |
+| peers                 | peer, data_center, rack, release_version, ring_id, rpc_address, schema_version, tokens set                                                                                                | Each node records what other nodes tell it about themselves over the gossip.              |
+| schema_columns        | keyspace_name, columnfamily_name, column_name, component_index, index_name, index_options, index_type, validator                                                                          | Used internally with compound primary keys.                                               |
+| schema_columnfamilies | See comment.                                                                                                                                                                              | Inspect schema_columnfamilies to get detailed information about specific column families. |

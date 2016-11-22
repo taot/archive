@@ -1,0 +1,29 @@
+#+STARTUP: showall
+* JCA
+http://docs.oracle.com/javase/7/docs/technotes/guides/security/crypto/CryptoSpec.html
+** Ancronyms
+*** JCA - Java Cryptography Architecture
+*** CSP - Cryptographic Service Provider
+** Stream vs. Block Ciphers
+** Modes of Operation
+When encrypting using a simple block cipher, two identical blocks of
+plaintext will always produce an identical block of cipher
+text. Cryptanalysts trying to break the ciphertext will have an easier
+job if they note blocks of repeating text. In order to add more
+complexity to the text, feedback modes use the previous block of
+output to alter the input blocks before applying the encryption
+algorithm. The first block will need an initial value, and this value
+is called the initialization vector (IV). Since the IV simply alters
+the data before any encryption, the IV should be random but does not
+necessarily need to be kept secret.
+*** CBC - Cipher Block Chaining
+*** CFB - Cipher Feedback Mode
+*** OFB - Output Feedback Mode
+*** ECB - Electronic Cookbook Mode (no feedback)
+*** PBE - Password-Based Encryption
+Takes character passwords and generate strong binary keys.
+*** AEAD - Authenticated Encryption with Associated Data
+*** AAD - Additional ASsociated Data
+** Key Format
+*** PEM - Base64 encoded
+*** DER - Binary format

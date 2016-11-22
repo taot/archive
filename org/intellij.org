@@ -1,0 +1,10 @@
+#+STARTUP: showall
+* 快捷键
+- Ctrl-N 查找类
+- Ctrl-Shift-N 查找文件
+- Ctrl-Shift-Alt-N 查找类中的方法或变量
+- Ctrl-B 查找变量的来源
+- Ctrl-G 定位行
+- Ctrl-E 最近打开的文件
+- F3 向下查找
+-

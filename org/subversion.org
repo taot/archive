@@ -1,0 +1,4 @@
+#+STARTUP: showall
+* Tricks
+** If you see "File marked as binary type" in diff
+$ svn propset svn:mime-type "text/plain" 单一来源采购.bpmn20.xml

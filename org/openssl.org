@@ -1,0 +1,9 @@
+#+STARTUP: showall
+* OpenSSL
+** Generate public/private keys (RSA)
+*** Private key
+openssl genrsa -out ./hopkins.key 2048
+*** Public key
+openssl rsa -in hopkins.key -pubout > hopkins_pub.key
+*** Convert private key to PKCS8 with no crypt
+openssl pkcs -topk8 -in hopkins.key -out hopkins_pkcs8_nocrypt.key -outform PEM -nocrypt

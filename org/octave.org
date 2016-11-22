@@ -1,0 +1,53 @@
+#+STARTUP: showall
+* GNU Octave
+** Basic Syntax
+*** Function Definition
+functions s = hello_string (to_who)
+...
+endfunction
+*** Comments with # (and %)
+File starts with the following line will be treated as an octave script
+#! /usr/bin/octave -q
+*** Quotes are similiar to c++, C and Perl
+*** Unwind-protect (alternative to try-catch block)
+unwind_protect
+  body
+unwind_protect_cleanup
+  cleanup
+end_unwind_protect
+** Built-in ODE and DAE solvers
++ LSODE
++ DASSL
++ DASPK
+** Execute an Octave script
+octave> run("Script Name with Spaces.m")
+$ octave the-script.m arg1 arg2
+$ ./the-script arg1 arg2
+** Differences between Octave and Matlab
++ Nested functions: Octave does not support nested functions
++ Differences in core syntax
+  + Limitations on the use of function handles
+  + Limitations of variable argument lists on the LHS of an expression
+  + Matlab classdef objeect oriented programming is not yet supported
++ Differences in core functions
++ Just-In-Time compiler: Octave does not have a JIT compiler
++ Compiler: no Octave compiler
++ Graphic handles
++ GUI functions: no Matlab compatible GUI functions yet
++ Simulink: no Simulink support
++ MEX-Files
++ Block comments: #{ and #}, or %{ and %} with some limitations
++ Mat-File format
++ Profiler
++ Toolboxes
++ Short-curcuit & and | operators: In Octave only && and || short cirtuit
++ Solvers for singular, under- and over-determined matrices
++ Octave extensions
+** Notes
+*** Install package
+pkg install "~/downloads/octave-pkg/odepkg-0.8.4.tar.gz"
+*** Set decimal display
+ocatve> format long e
+*** Draw multiple lines in one figure
+octave> hold on;
+octave> plot(angles, cos(angles), 'g-');
