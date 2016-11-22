@@ -1,0 +1,13 @@
+# patterns
+*~
+*.class
+*.log
+
+# specific directories and files
+/client/cloudstairs
+/server/target
+/server/src/main/resources/pubkeys.pkcs8
+/server/.classpath
+/server/.project
+/server/.settings
+
