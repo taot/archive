@@ -1,0 +1,11 @@
+<asset-class code="ASSET" desc="">
+    <asset-class code="CASH">
+        <asset-class code="DEPOSIT"/>
+        <asset-class code="FEE"/>
+        <asset-class code="COMMISSION"/>
+    </asset-class>
+    <asset-class code="SECURITY">
+        <asset-class code="EQUITY"/>
+        <asset-class code="BOND"/>
+    </asset-class>
+</asset-class>

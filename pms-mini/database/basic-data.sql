@@ -1,0 +1,5 @@
+-- INSERT INTO ledgers VALUES (1, '现金');
+-- INSERT INTO ledgers VALUES (2, '佣金');
+-- INSERT INTO ledgers VALUES (3, '股票-流通股票');
+-- INSERT INTO ledgers VALUES (4, '应付清算款');
+-- INSERT INTO ledgers VALUES (5, '应收清算款');

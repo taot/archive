@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger - %msg %throwable{full} %n</Pattern>
+        </layout>
+    </appender>
+
+    <root level="WARN">
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+    <logger name="com.taot.pms" level="DEBUG"/>
+
+    <logger name="com.taot.pms.common.config" level="INFO"/>
+
+    <logger name="com.jolbox" level="TRACE"/>
+
+    <logger name="scala.slick" level="INFO"/>
+
+    <logger name="scala.slick.jdbc.JdbcBackend.statement" level="INFO"/>
+
+</configuration>

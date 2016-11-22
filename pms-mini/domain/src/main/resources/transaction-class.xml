@@ -1,0 +1,12 @@
+<transaction-classes>
+    <asset class="ASSET.SECURITY.EQUITY">
+        <transaction-class code="BUY"/>
+        <transaction-class code="SELL"/>
+    </asset>
+    <asset class="ASSET.SECURITY.FUTURE">
+        <transaction-class code="LONG"/>
+        <transaction-class code="SHORT"/>
+        <transaction-class code="LONG_COVER"/>
+        <transaction-class code="SHORT_COVER"/>
+    </asset>
+</transaction-classes>

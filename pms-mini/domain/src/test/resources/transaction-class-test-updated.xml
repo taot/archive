@@ -1,0 +1,7 @@
+<transaction-classes>
+    <asset class="ASSET.SECURITY.EQUITY">
+        <transaction-class code="BUY"/>
+        <transaction-class code="SELL"/>
+        <transaction-class code="TEST_TRAN"/>
+    </asset>
+</transaction-classes>
